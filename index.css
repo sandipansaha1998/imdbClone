@@ -1,0 +1,100 @@
+body {
+  background-color: rgb(9, 9, 9);
+  color: white;
+}
+
+nav {
+  background-color: gray;
+  position: sticky !important;
+}
+
+.brand img {
+  width: 135px;
+}
+
+#search {
+  background-color: lightgray;
+  align-items: center;
+}
+
+#search input {
+  background-color: lightgray;
+  border-radius: 25px;
+}
+
+/* Image Containers for image */
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+/* Dynamic Display */
+#search-display {
+  background-color: rgb(165, 172, 166);
+  overflow: scroll;
+}
+/* Static display */
+#display-panel {
+  position: relative;
+  margin-top: 100px !important;
+}
+
+#search-display::-webkit-scrollbar {
+  display: none;
+}
+#dynamic-search {
+  position: absolute;
+  max-height: 55vw;
+  position: absolute;
+  z-index: 2;
+}
+/* tab */
+.tab:hover {
+  background: black;
+}
+/* card */
+.card {
+  /* border: 2px solid white; */
+  box-shadow: 0 0 10px rgba(234, 229, 229, 0.5);
+  padding: 1%;
+  background-color: gray !important ;
+}
+.tab img {
+  width: 60px;
+}
+/* Like Icon */
+.like {
+  color: rgb(114, 117, 115) !important;
+}
+.like:hover {
+  color: red !important;
+  cursor: grab;
+}
+/*  */
+.album:hover {
+  cursor: grab;
+}
+
+/* Liked Effect */
+.liked {
+  box-shadow: 0;
+  border: 2px solid red;
+}
+
+#favorites {
+  box-shadow: 0 0 10px rgba(234, 229, 229, 0.5);
+}
+
+/* tab */
+.tab:hover {
+  background-color: rgb(108, 91, 91);
+}
+
+.detail-container {
+  margin-top: 25px;
+  box-shadow: 0 0 10px rgba(234, 229, 229, 0.5);
+}
+#details {
+  display: none;
+}

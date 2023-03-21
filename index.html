@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>IMDB </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+    <div class="container-fuild">
+        <!-- Navbar -->
+        <div id="navbar" class="brand row container-fluid ">
+            <img class="d-block mx-auto" src="./images/logo.png">
+
+        </div>
+        <!-- Dynamic Search -->
+        <div id="dynamic-search" class="container-fluid test ">
+            <div class="d-flex flex-column test  ">
+                <!-- Form for user input -->
+                <form id="search" class="d-flex col-12 col-md-8 col-lg-5 test mx-auto">
+                    <input class="form-control " type="search" placeholder="Search Movies">
+                    <i class="fa-solid fa-magnifying-glass fa-lg me-3"></i>
+                </form>
+                <!-- Dynamic Display of results  -->
+                <div id="search-display" class="d-flex flex-column col-12 col-md-8 col-lg-5 mx-auto test">
+                </div>
+            </div>
+        </div>
+
+        <!-- Display Panel -->
+        <div id="display-panel" class="container-fluid d-flex align-items-start test row">
+            <div class="container-fluid d-lg-none text-end">
+                <!-- Toggler for Movile Phones -->
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
+                    aria-controls="searched-result favorites-container">
+                    <i class="fa-solid fa-bars fa-xl" style="color: #ced4db;"></i>
+                </button>
+            </div>
+            <!-- Searched Display -->
+            <div id="searched-result"
+                class="  d-lg-flex justify-content-center col-12 col-xl-8 test my-2 flex-wrap gap-4 collapse multi-collapse show container-fluid ">
+                Your results would appear here
+            </div>
+            <!-- Favorites -->
+            <div id="favorites-container" class="col-12 col-lg-4  collapse-lg collapse-show multi-collapse  ">
+                <h1 class="text-center"><span class="badge bg-secondary">Wishlist</span></h1>
+                <div id="favorites" class="col-12  ">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://kit.fontawesome.com/5d0265ed42.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./create.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
