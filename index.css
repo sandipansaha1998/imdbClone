@@ -39,15 +39,21 @@ nav {
   position: relative;
   margin-top: 100px !important;
 }
-
+#search-display {
+  max-height: 55vh;
+  overflow: scroll;
+}
 #search-display::-webkit-scrollbar {
   display: none;
 }
+
 #dynamic-search {
   position: absolute;
-  max-height: 55vw;
-  position: absolute;
   z-index: 2;
+  overflow: scroll;
+}
+#dynamic-search::-webkit-scrollbar {
+  display: none;
 }
 /* tab */
 .tab:hover {

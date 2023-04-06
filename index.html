@@ -20,6 +20,7 @@
             <img class="d-block mx-auto" src="./images/logo.png">
 
         </div>
+
         <!-- Dynamic Search -->
         <div id="dynamic-search" class="container-fluid test ">
             <div class="d-flex flex-column test  ">
@@ -35,8 +36,8 @@
         </div>
 
         <!-- Display Panel -->
-        <div id="display-panel" class="container-fluid d-flex align-items-start test row">
-            <div class="container-fluid d-lg-none text-end">
+        <div id="display-panel" class="container-fluid d-flex align-items-start row">
+            <div class="container-fluid d-md-none text-end">
                 <!-- Toggler for Movile Phones -->
                 <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse"
                     aria-controls="searched-result favorites-container">
@@ -45,13 +46,20 @@
             </div>
             <!-- Searched Display -->
             <div id="searched-result"
-                class="  d-lg-flex justify-content-center col-12 col-xl-8 test my-2 flex-wrap gap-4 collapse multi-collapse show container-fluid ">
+                class="  d-lg-flex justify-content-center col-12 col-md-8 test my-2 my-md-0 flex-wrap gap-4 collapse multi-collapse show container-fluid ">
                 Your results would appear here
             </div>
             <!-- Favorites -->
-            <div id="favorites-container" class="col-12 col-lg-4  collapse-lg collapse-show multi-collapse  ">
+
+            <div id="favorites-container" class="col-12  col-md-4  collapse-lg collapse-show multi-collapse  ">
                 <h1 class="text-center"><span class="badge bg-secondary">Wishlist</span></h1>
-                <div id="favorites" class="col-12  ">
+                <div id="loader" class="conatiner-fluid text-center">
+                    <div class="spinner-border text-center" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                </div>
+                <div id="favorites" class="col-12" style="display: none;">
+
                 </div>
             </div>
 

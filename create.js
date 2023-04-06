@@ -15,7 +15,7 @@ albumDiv.setAttribute('data-id',movie.imdbID);
 const albumImg = document.createElement('img');
 albumImg.classList.add('col-1');
 albumImg.src = movie.Poster;
-albumImg.alt = '...';
+albumImg.alt = 'Poster Not Found';
 
 
 // create album details div element and set its contents
@@ -71,7 +71,7 @@ imgContainerDiv.classList.add('img-container', 'col-8', 'col-sm-7', 'col-md-10',
 
 // create image element
 const img = document.createElement('img');
-img.alt = '...';
+img.alt = 'Poster Not Found';
 img.src =movie.Poster;
 img.id = movie.imdbID;
 

@@ -247,8 +247,10 @@ const inputFormListner = async function(event){
 
 
 
-const start = function(){
-    renderFavorites(favMovies);
+const start = async function(){
+    await renderFavorites(favMovies);
+    document.querySelector("#loader").style.display='none';
+    document.querySelector("#favorites").style.display='block';
     search.addEventListener('click',focus);
     search.addEventListener('input',displayDynamic)
     search.addEventListener('keypress',inputFormListner);
